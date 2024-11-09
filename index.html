@@ -27,17 +27,24 @@
             left: 10px;
             top: 43%;
         }
+        .previous:hover {
+            transform: translateX(-5px);
+        }
         .next {
             right: 10px;
             top: 43%;
+        }
+        .next:hover {
+            transform: translateX(5px);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="./img/diwali.jpg" class="slide">
+        <img src="./img/diwali.jpg" class="slide" id="slide">
         <img src="./img/next.png" onclick="next()" class="icon next">
         <img src="./img/previous.png" onclick="previous()" class="icon previous">
     </div>
+
 </body>
 </html>
