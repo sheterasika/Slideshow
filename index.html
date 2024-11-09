@@ -45,5 +45,31 @@
         <img src="./img/next.png" onclick="next()" class="icon next">
         <img src="./img/previous.png" onclick="previous()" class="icon previous">
     </div>
+
+    <script>
+        const images = ["./img/diwali.jpg", "./img/holi.webp", "./img/dussehra.jpg", "./img/ganesh-utsava.jpg", "./img/gudipadwa.jpg", "./img/shivjayanti.webp"];
+        let index = 0;
+        const slideImg = document.getElementById('slide');
+
+        function next() {
+            if (index < images.length - 1) {
+                index++;
+            }
+            else {
+                index = 0;
+            }
+            slideImg.src = images[index]
+        }
+
+        function previous() {
+            if (index > 0) {
+                index--;
+            }
+            else {
+                index = images.length - 1;
+            }
+            slideImg.src = images[index]
+        }
+    </script>
 </body>
 </html>
