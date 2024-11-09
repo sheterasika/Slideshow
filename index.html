@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slideshow</title>
+    <style>
+        .container {
+            width: fit-content;
+            margin: 90px auto;
+            position: relative;
+        }
+        .slide {
+            height: 300px;
+            width: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .icon {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .previous {
+            left: 10px;
+            top: 43%;
+        }
+        .next {
+            right: 10px;
+            top: 43%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <img src="./img/diwali.jpg" class="slide" id="slide">
+        <img src="./img/diwali.jpg" class="slide">
         <img src="./img/next.png" onclick="next()" class="icon next">
         <img src="./img/previous.png" onclick="previous()" class="icon previous">
     </div>
